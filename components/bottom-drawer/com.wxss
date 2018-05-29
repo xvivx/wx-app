@@ -1,0 +1,58 @@
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    background-color: rgba(0, 0, 0, .6);
+}
+.mask.active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+
+.drawer-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(0, 100%, 0);
+    overflow: hidden;
+}
+.drawer-wrapper.active {
+    transform: translate3d(0, 0, 0);
+    transition: transform .3s;
+}
+
+
+.drawer-title {
+    display: flex;
+    align-items: center;
+    height: 120rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #ccc;
+}
+.title-item {
+    flex: 1 1 0;
+    padding: 0 30rpx;
+    font-size: 30rpx;
+}
+.title-left {
+    color: #ccc;
+}
+.title-middle {
+    color: #ccc;
+    text-align: center;
+}
+.title-right {
+    text-align: right;
+    color: #15b869;
+}
+:host {
+    color: yellowgreen;
+}

@@ -1,0 +1,18 @@
+<slot></slot>
+<view class="mask {{ active ? 'active' : '' }}" catchtouchmove="move"></view>
+<view class="picker-wrapper {{ active ? 'active' : '' }}" catchtouchmove="move">
+    <view class="picker-title">
+        <view class="title-item title-left" bindtap="cancel">取消</view>
+        <view class="title-item title-right" bindtap="ensure">确定</view>
+    </view>
+    <view class="flex-container">
+        <picker-item 
+            class="picker-column-item" 
+            config="{{ {value: tmpValue[index], range: item } }}"
+            bind:columnchange="onColumnChange"
+            wx:for="{{ range }}" 
+            wx:key="{{ index }}"
+            data-column="{{ index }}"
+        />
+    </view>
+</view>

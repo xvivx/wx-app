@@ -1,0 +1,30 @@
+page {
+    background: #ccc;
+    padding-top: 20px;
+}
+swiper-item {
+    position: relative;
+    display: block;
+    background: transparent;
+    width: 90%!important;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+swiper {
+    width: 500rpx;
+}
+
+.red-class {
+    color: red;
+}
+
+
+.coupon {
+    margin-bottom: 20px;
+    display: block;
+}
+
+image {
+    width: 300rpx;
+}

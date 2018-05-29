@@ -1,0 +1,26 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -200rpx;
+    width: 300rpx;
+    background: red;
+    z-index: -1;
+}
+
+.left {
+    background: #ccc;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    right: 60rpx;
+    transform: translateY(-50%);
+    font-size: 28rpx;
+    color: #fff;
+}

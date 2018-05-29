@@ -1,0 +1,13 @@
+<view bindtap="btntap">自己写的picker</view>
+<custom-picker 
+    range="{{ range }}" 
+    active="{{ active }}" 
+    bind:columnchange="onColumnChange" 
+    bind:change="onChange" 
+    bind:cancel="onCancel"
+    value="{{ value }}"
+/>
+
+<view>
+    {{ range[0][value[0]] }}{{ range[1][value[1]] }}{{ range[2][value[2]] }}{{ range[3][value[3]] }}
+</view>
